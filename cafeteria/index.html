@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./imag/logo.jpeg" alt="logo"" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+            <input type="text" id="Input" class="escondido">
+            <div class="icons">
+
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
+                    alt="search--v1" onclick="mostrarInput()" />
+
+                <img width="30" height="30" src="https://img.icons8.com/material-sharp/30/ffffff/shopping-cart.png"
+                    alt="shopping-cart" />
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3> Descubra o sabor em cada momento, uma xícara de cada vez.</h3>
+                <p>Em nossa Cafeteria, mergulhe em um mundo de delícias que despertam todos os seus sentidos. Deixe-se
+                    envolver pelos aromas tentadores que pairam no ar, convidando-o a explorar uma rica variedade de
+                    cafés especiais, cuidadosamente selecionados de fazendas ao redor do mundo. Saboreie cada gole, cada
+                    momento de pausa, enquanto nossos baristas especializados preparam suas criações artesanais com
+                    maestria, transformando cada xícara em uma obra-prima do sabor.</p>
+                <a href="#menu" class="btn">Pegue o seu agora</a>
+            </div>
+
+
+        </section>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="title">Sobre <span>Nós</span> </h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.21.08 (1).jpeg" alt="sobre-nois">
+            </div>
+            <div class="content">
+                <h3>O Que Faz Nosso Café Especial</h3>
+                <p>Café especial é aquele que se destaca por sua qualidade superior em todo o processo, desde o cultivo até a xícara final. Para ser considerado especial, o café precisa atender a critérios rigorosos de qualidade, como:
+                    * Origem: Os grãos devem ser provenientes de regiões com clima e solo adequados para o cultivo do café Arábica, como as montanhas do Brasil.</p> <p>* Cultivo: As plantas devem ser cuidadas com atenção, com irrigação controlada, adubação natural e manejo de pragas e doenças.
+                    * Colheita: A colheita deve ser feita manualmente, para selecionar apenas os grãos maduros e perfeitos.
+                    * Processamento: Os grãos devem ser processados de forma cuidadosa, para preservar suas características únicas. Existem diferentes métodos de processamento, como natural, lavado e descascado, cada um com suas vantagens e desvantagens.
+                    * Torra: A torra é uma etapa fundamental para o desenvolvimento do sabor e aroma do café. Deve ser feita por profissionais experientes, que controlam o tempo e a temperatura da torra para que os grãos atinjam o ponto ideal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="title">Nosso <span>Menu</span></h2>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.23.48.jpeg" alt="Expresso">
+                <h3> Expresso</h3>
+                <div class="price">R$ 7,99 <span>R$ 9,99</span></div>
+                <a class="btn" onclick="adicionarItem('Expresso', '7.99', './imag/WhatsApp Image 2024-06-02 at 16.23.48.jpeg')">Adicione ao Carrinho</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.48.25 (1).jpeg" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <div class="price">R$ 9,99 <span>R$ 12,99</span></div>
+                <a class="btn" onclick="adicionarItem('Macchiato', '9.99', './imag/WhatsApp Image 2024-06-02 at 16.48.25 (1).jpeg')">Adicione ao Carrinho</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.23.10.jpeg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <div class="price">R$ 9,99 <span>R$ 12,99</span></div>
+                <a class="btn" onclick="adicionarItem('Cappuccino', '9.99', './imag/WhatsApp Image 2024-06-02 at 16.23.10.jpeg')">Adicione ao
+                    Carrinho</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.48.24.jpeg" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <div class="price">R$ 13,99 <span>R$ 15,99</span></div>
+                <a class="btn" onclick="adicionarItem('Cold Brew', '13.99', './imag/WhatsApp Image 2024-06-02 at 16.48.24.jpeg')">Adicione ao
+                    Carrinho</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.48.26.jpeg" alt="Chai Latte">
+                <h3>Chai Latte</h3>
+                <div class="price">R$ 10,99 <span>R$ 14,99</span></div>
+                <a class="btn" onclick="adicionarItem('Chai Latte', '10.99', './imag/WhatsApp Image 2024-06-02 at 16.48.26.jpeg')">Adicione ao
+                    Carrinho</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.48.25.jpeg" alt="Latte">
+                <h3>Latte</h3>
+                <div class="price">R$ 10,99 <span>R$ 14,99</span></div>
+                <a class="btn" onclick="adicionarItem('Latte', '10.99', './imag/WhatsApp Image 2024-06-02 at 16.48.25.jpeg')">Adicione ao Carrinho</a>
+            </div>
+        </div>
+
+        <h2 class="title">Carrinho de <span>Compras</span></h2>
+        <div id="carrinho" class="box-container" onclick="removerItem(event)">
+        </div>
+        <p id="total">Total: R$ 0,00</p>
+        <a class="btn" href="https://whatsa.me/5583991303589/?t=Ola,%20gostei%20do%20projeto%20cafeteria!" target="_blank">
+            solicitar Pedido
+
+        </a>
+
+    </section>
+    <section class="review" id="review">
+        <h2 class="title">Nosso <span>clientes</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 21.20.20.jpeg" alt="comentario">
+                <p>"Adorei essa cafeteria! O ambiente é super aconchegante e convidativo, perfeito para relaxar e tomar um café com os amigos. O café é delicioso, com um sabor rico e intenso. Também experimentei um croissant que estava divino! Com certeza voltarei mais vezes."</p>
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.26.49.jpeg" alt="foto-cliente" class="user">
+                <h3>MARCEL HERRMANN</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 21.20.20.jpeg" alt="comentario">
+                <p>"Fui muito bem atendida nessa cafeteria. Os baristas são simpáticos e atenciosos, e me ajudaram a escolher o café perfeito para o meu gosto. Além disso, a cafeteria oferece uma grande variedade de opções de café, chá, doces e salgados. Recomendo a todos que estão procurando um lugar agradável para tomar um café e trabalhar ou estudar."</p>
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.26.17.jpeg" alt="foto-cliente" class="user">
+                <h3>REGINA JORDÃO</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+            <div class="box">
+                <img src="./imag/WhatsApp Image 2024-06-02 at 21.20.20.jpeg" alt="comentario">
+
+                <p>"Essa cafeteria tem uma localização perfeita, bem no centro da cidade. É fácil de chegar e tem bastante lugar para sentar. Os preços são justos e a qualidade dos produtos é excelente. Recomendo para quem procura um café rápido e gostoso no dia a dia. Ambiente aconchegante e convidativo , decoração moderna e agradavél."</p>
+                <img src="./imag/WhatsApp Image 2024-06-02 at 16.25.31.jpeg" alt="foto-cliente" class="user">
+                 <h3>ANTONIO LUIZ</h3
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="address" id="address">
+        <h2 class="title"><span></span></h2>
+
+       
+    </section>
+    <section class="footer">
+        <div class="share">
+            <a href=https://www.instagram.com/elaybritto?igsh=ZXh4cmFlcnk2eWV2 target="_blank">
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/ffffff/instagram-new.png"
+                    alt="facebook-new" /></a>
+            <a href="https://whatsa.me/558391303589/?t=Ola,%20gostei%20do%20projeto%20cafeteria!" target="_blank">
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/ffffff/whatsapp--v1.png"
+                    alt="whatsapp--v1" /></a>
+            <a href="https://github.com/ElaineBrto" target="_blank">
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                    alt="github" /></a>
+        </div>
+    </section>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
